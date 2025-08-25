@@ -100,7 +100,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo \`LICENSE\` para más d
 
 ## 👨‍💻 Autor
 
-Tu Nombre - [@tu_usuario](https://github.com/tu_usuario)
+Walter Hidalgo - [@Waljos18](https://github.com/Waljos18)
 
 ## 🙏 Agradecimientos
 
