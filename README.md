@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Sistema de Alquiler de Canchas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación web full-stack para la gestión y reserva de canchas deportivas, desarrollada con React, Node.js, Express y MySQL.
 
-## Available Scripts
+## 🏆 Características
 
-In the project directory, you can run:
+- **Gestión de Canchas**: Panel administrativo para agregar y gestionar canchas
+- **Sistema de Reservas**: Los usuarios pueden reservar canchas por fecha y hora
+- **Autenticación**: Sistema de login seguro con JWT
+- **Panel Administrativo**: Visualización y gestión de todas las reservas
+- **Interfaz Moderna**: UI responsive con Bootstrap
 
-### `npm start`
+## 🛠️ Tecnologías
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- React 19
+- Vite
+- Bootstrap 5
+- Axios
+- React Router
+- FullCalendar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend
+- Node.js
+- Express
+- MySQL
+- JWT (JSON Web Tokens)
+- bcrypt
+- CORS
 
-### `npm test`
+## 📋 Requisitos Previos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (versión 14 o superior)
+- MySQL
+- npm o yarn
 
-### `npm run build`
+## 🚀 Instalación
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clona el repositorio
+\`\`\`bash
+git clone https://github.com/TU_USUARIO/alquiler_canchas.git
+cd alquiler_canchas
+\`\`\`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Instala las dependencias
+\`\`\`bash
+npm install
+\`\`\`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Configura la base de datos MySQL y crea un archivo `.env` en la raíz del proyecto:
+\`\`\`env
+DB_HOST=localhost
+DB_USER=tu_usuario
+DB_PASSWORD=tu_contraseña
+DB_NAME=alquiler_canchas
+JWT_SECRET=tu_clave_secreta
+\`\`\`
 
-### `npm run eject`
+4. Inicia el servidor de desarrollo
+\`\`\`bash
+npm start
+\`\`\`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Estructura del Proyecto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+\`\`\`
+alquiler_canchas/
+├── src/                    # Código fuente del frontend
+│   ├── components/         # Componentes React
+│   ├── styles/            # Archivos CSS
+│   └── main.jsx           # Punto de entrada
+├── server/                # Código del backend
+│   ├── index.js          # Servidor Express
+│   └── ...
+├── public/               # Archivos estáticos
+├── package.json          # Dependencias del proyecto
+└── README.md            # Este archivo
+\`\`\`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎯 Scripts Disponibles
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- \`npm run dev\` - Inicia el servidor de desarrollo de Vite
+- \`npm run build\` - Construye la aplicación para producción
+- \`npm run server\` - Inicia solo el servidor backend
+- \`npm start\` - Inicia tanto el frontend como el backend concurrentemente
 
-## Learn More
+## 🤝 Contribuciones
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Las contribuciones son bienvenidas. Por favor:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork el proyecto
+2. Crea una rama para tu feature (\`git checkout -b feature/AmazingFeature\`)
+3. Commit tus cambios (\`git commit -m 'Add some AmazingFeature'\`)
+4. Push a la rama (\`git push origin feature/AmazingFeature\`)
+5. Abre un Pull Request
 
-### Code Splitting
+## 📝 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este proyecto está bajo la Licencia MIT. Ver el archivo \`LICENSE\` para más detalles.
 
-### Analyzing the Bundle Size
+## 👨‍💻 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Tu Nombre - [@tu_usuario](https://github.com/tu_usuario)
 
-### Making a Progressive Web App
+## 🙏 Agradecimientos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React team por la increíble biblioteca
+- Bootstrap team por el framework CSS
+- Todos los contribuidores de las librerías open source utilizadas

@@ -1,0 +1,38 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('/cancha-bg.jpg') no-repeat center center/cover;
+  background-color: #f4f4f4;
+}
+
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  max-width: 150px;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 576px) {
+  .login-box {
+    padding: 1.5rem;
+  }
+}
